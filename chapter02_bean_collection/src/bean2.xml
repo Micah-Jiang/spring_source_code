@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <!--1、提取list集合类型属性的注入-->
+    <util:list id="booklist">
+        <value>Spring</value>
+        <value>Java</value>
+        <value>JVM Machine</value>
+    </util:list>
+
+    <!--2、提取list集合类型属性的注入使用
+    scope:(1)"prototype"多实例
+         （2)"singleton"单实例
+    -->
+    <bean id="book" class="com.micah.spring.collection.Book" scope="prototype">
+        <property name="list" ref="booklist"/>
+    </bean>
+</beans>
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="chapter10_webflux_function" />
+        <module name="chapter08_spring_reactor" />
+        <module name="chapter09_spring_webflux" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chapter08_spring_reactor" target="1.8" />
+      <module name="chapter09_spring_webflux" target="1.8" />
+      <module name="chapter10_webflux_function" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="chapter08_spring_reactor" options="-parameters" />
+      <module name="chapter09_spring_webflux" options="-parameters" />
+      <module name="chapter10_webflux_function" options="-parameters" />
+    </option>
+  </component>
+</project>

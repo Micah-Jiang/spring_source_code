@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--级联赋值-->
+    <bean id="employee" class="com.micah.spring.bean.Employee">
+        <!--普通属性-->
+        <property name="eName" value="Micah"/>
+        <property name="gender" value="男"/>
+        <!--级联赋值-->
+        <property name="department" ref="department"/>
+        <property name="department.dname" value="技术部"/>
+    </bean>
+    <bean id="department" class="com.micah.spring.bean.Department">
+        <property name="dname" value="财务部"/>
+    </bean>
+</beans>
+
+

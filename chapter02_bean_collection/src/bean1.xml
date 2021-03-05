@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--集合类型的数据注入-->
+    <bean id="student" class="com.micah.spring.collection.Student">
+        <!--数据类型属性的注入-->
+        <property name="courses">
+            <array>
+                <value>Java</value>
+                <value>DataBase</value>
+                <value>SoftWare Theory</value>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>Micah</value>
+                <value>Maruko</value>
+                <value>Mapper</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="JAVA" value="java"></entry>
+                <entry key="DATABASE" value="database"></entry>
+                <entry key="SOFTWARE THEORY" value="software theory"></entry>
+            </map>
+        </property>
+        <property name="set">
+            <set>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </set>
+        </property>
+        <!--注入list集合类型，但list元素是对象的属性-->
+        <property name="courseList">
+            <list>
+                <ref bean="course1"/>
+                <ref bean="course2"/>
+            </list>
+        </property>
+    </bean>
+
+    <!--创建多个Course bean对象-->
+    <bean id="course1" class="com.micah.spring.collection.Course">
+        <property name="cName" value="English"/>
+    </bean>
+    <bean id="course2" class="com.micah.spring.collection.Course">
+        <property name="cName" value="Math"/>
+    </bean>
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--配置User对象创建-->
+    <bean id="user" class="com.micah.spring.User"/>
+    <!--set方法注入属性-->
+    <bean id="book" class="com.micah.spring.Book">
+      <!--使用Property来进行属性注入-->
+        <property name="bname" value="上海...研究所"/>
+        <property name="bauthor" value="Micah"/>
+    </bean>
+    <!--有参构造方法注入属性-->
+    <bean id="orders" class="com.micah.spring.Orders">
+        <constructor-arg index="0" value="haha"/>
+        <constructor-arg index="1" value="hahhahahahha"/>
+    </bean>
+    <bean id="books" class="com.micah.spring.Book" p:bname="计算机软件与理论" p:bauthor="micah"/>
+</beans>
+
+

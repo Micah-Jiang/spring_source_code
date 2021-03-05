@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--开启组件扫描
+        1、如果扫描多个包，就用逗号隔开
+        2、dao和service，扫描包上层目录
+    -->
+    <context:component-scan base-package="com.micah"/>
+    <!--示例1
+    use-default-filters="false" :不在使用默认的filter,自定义Filter
+    context:include-filter ：设置扫描哪些内容
+    -->
+    <!--<context:component-scan base-package="com.micah" use-default-filters="false">
+         <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+    </context:component-scan>-->
+
+    <!--示例2
+    下面配置扫描包所有内容
+    context:exclude-filter
+    -->
+    <!--<context:component-scan base-package="com.micah">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+    </context:component-scan>-->
+
+</beans>
