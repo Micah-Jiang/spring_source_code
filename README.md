@@ -6,6 +6,6 @@
 ### chapter 02 -- Spring IoC和DI https://blog.csdn.net/qq_35843514/article/details/114291994?spm=1001.2014.3001.5501
 ### chapter 03 -- Spring Beans https://blog.csdn.net/qq_35843514/article/details/114299601?spm=1001.2014.3001.5501
 ### chapter 04 -- Spring AOP https://blog.csdn.net/qq_35843514/article/details/114358536?spm=1001.2014.3001.5501
-### chapter 05 -- 待更新
+### chapter 05 -- Spring JDBC数据访问 https://blog.csdn.net/qq_35843514/article/details/114436797?spm=1001.2014.3001.5501
 ### chapter 06 -- 待更新
 ### chapter 07 -- 待更新
