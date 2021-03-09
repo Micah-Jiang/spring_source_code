@@ -8,4 +8,6 @@
 ### chapter 04 -- Spring AOP https://blog.csdn.net/qq_35843514/article/details/114358536?spm=1001.2014.3001.5501
 ### chapter 05 -- Spring JDBC数据访问 https://blog.csdn.net/qq_35843514/article/details/114436797?spm=1001.2014.3001.5501
 ### chapter 06 -- Spring 事务管理 https://blog.csdn.net/qq_35843514/article/details/114442323?spm=1001.2014.3001.5501
-### chapter 07 -- 待更新
+### chapter 07 -- Spring 5新特性 https://blog.csdn.net/qq_35843514/article/details/114547076
+
+2020/3/9更新完毕！
